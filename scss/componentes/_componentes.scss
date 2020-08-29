@@ -1,0 +1,48 @@
+.novedades {
+  display: grid;
+  align-items: center;
+  justify-content: center; 
+  @extend .novedades2 }
+
+.novedades2 {
+  width: $ancho-pantalla;
+  margin-bottom: $espacio;
+  margin-top: $espacio; }
+
+.novedades3 {
+  display: grid;
+  align-items: center;
+  justify-content: center; 
+  @extend .novedades2}
+
+  .tarjetas {
+  display: grid;
+  grid-template-areas: "imgpromociones imgdescuentos imgtarjetas imgmercadopago";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  margin-top: $espacio; }
+
+  @each $tarjetas in promociones, descuentos, tarjetas, mercadopago {
+
+  .tarjetas__#{$tarjetas} { 
+  grid-area: img#{$tarjetas};
+  width: $ancho-pantalla;
+  height: auto;
+  border: 0;
+  padding: 0;
+  margin: 0;
+            }
+} 
+
+
+.tarjetas__tarjetas {
+  transition: all 5s;
+&:hover {
+  width: 500px;
+  height: auto; }}
+
+  .carousel-inner img {
+  width: $ancho-pantalla;
+  height: 100%; }

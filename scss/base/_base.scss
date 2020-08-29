@@ -1,0 +1,20 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto'; }
+
+  h3 p strong {
+  width: $ancho-pantalla/2;
+  color: blue;
+  font-style: italic;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: 'Bangers', cursive;
+  display: inline-block;
+  animation: heartBeat;
+  animation-duration: 2s;
+  margin-top: $espacio;
+  margin-bottom: $espacio;
+  border-bottom: 1px solid blue; }
