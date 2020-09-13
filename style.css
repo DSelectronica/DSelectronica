@@ -3,24 +3,24 @@ body {
   margin: 0;
   font-family: 'roboto'; }
 
-h3 p strong {
-  width: 50%;
-  color: blue;
-  font-style: italic;
-  font-size: 35px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 5px;
-  font-family: 'Bangers', cursive;
+h3 {
+  /* width: 50%; */
+  color: #007bff;
+  /* font-style: italic; */
+  font-size: 3rem !important;
+  /* text-transform: uppercase; */
+  /* text-align: center; */
+  /* letter-spacing: 5px; */
+  /* font-family: 'Bangers', cursive; */
   display: inline-block;
-  animation: heartBeat;
+  animation: fadeInLeft;
   animation-duration: 2s;
   margin-top: 15px;
   margin-bottom: 15px;
-  border-bottom: 1px solid blue; }
+  border-bottom: 1px solid #007bff; }
 
-.novedades {
-  display: grid;
+.novedades, .novedades3 {
+  /* display: flex; */
   align-items: center;
   justify-content: center; }
 
@@ -29,10 +29,17 @@ h3 p strong {
   margin-bottom: 15px;
   margin-top: 15px; }
 
-.novedades3 {
-  display: grid;
-  align-items: center;
-  justify-content: center; }
+.novedades .card-img-top {
+  max-height: 200px;
+  width: auto;
+  object-position: center;
+  object-fit: contain; }
+
+.novedades3 .card-img-top {
+  max-height: 360px;
+  width: auto;
+  object-position: center;
+  object-fit: cover; }
 
 .tarjetas {
   display: grid;
@@ -120,15 +127,15 @@ h3 p strong {
 .pieDePagina {
   background-image: linear-gradient(to top, black, #201F66);
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
 
 .redesSociales {
   color: black;
-  width: 50%;
+  /* width: 50%; */
   text-align: left;
-  margin-bottom: auto;
-  margin-top: auto;
+  /* margin-bottom: auto;
+  margin-top: auto; */
   align-content: center; }
 
 .hvRedes {
@@ -143,7 +150,7 @@ h3 p strong {
 .formulario {
   background-color: #333;
   color: white;
-  width: 80%;
+  width: 100%;
   text-align: center;
   border-radius: 5px;
   border: groove 3px white;
@@ -174,7 +181,7 @@ h3 p strong {
   align-items: center; }
 
 .tituloForm {
-  color: blue;
+  color: #007bff;
   font-style: italic;
   font-size: 15px;
   font-weight: bold;
